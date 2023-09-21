@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>@Fashionista</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="blog.css">
+        <style type="text/css">
+  h1 {
+    font-size: 24px; 
+    font-weight: bold; 
+  }
+  select {
+    font-size: 18px; 
+    font-weight: bold; 
+  }
+ h2 {
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #000000 ;
+}
+label.form-label {
+  font-size: 18px; 
+  font-weight: bold; 
+  color: #000000 ;
+}
+
+</style>
+</head>
+  </div>
+
+    <body>
+        <header class="main_header">
+            <div class="d-flex justify-content-center align-items-center flex-column py-5">
+                <h1 class="text-uppercase main_heading">Style Chronicles</h1>
+                <p class="main_heading__para">Welcome to my <span class="text-capitalize bg-dark text-white py-2 px-3"> world of blog</span> </p>
+            </div>
+            <!-- //the main image -->
+            <div class="main_header__div d-flex align-items-start
+        justify-content-center  flex-column shadow pl-5">
+                <p> A Fashionista's Journey</p>
+                <h2 class="animateWord">
+                    <span>Your Guide to Fashion & Beauty</span>
+                    <div>
+                      
+                        <ul class="flip4">
+                        </ul>
+                    </div>
+                </h2>
+                <button class="text-uppercase">subscribe</button>
+            </div>
+            <div class=" right_div_post">
+                <div class="right_div__title py-2 pl-2 ">
+                    <h2>Enter Your Details </h2>
+                </div>
+                <div class="right_sub__div">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Enter your Name</label>
+                            <input type="email" class="form-control mt-2" id="exampleFormControlInput1" placeholder="name">
+                        </div>                          
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Enter your e-mail below and get notified on the latest blog posts.</label>
+                                        <input type="email" class="form-control mt-2" id="exampleFormControlInput1" placeholder="name@example.com">
+                                    </div>
+                                    <h1><span>select attire</span></h1>
+                                    <div class="mb-6">
+                                        <select id="attireSelect">
+                                        <option value="saree">Saree</option>
+                                        <option value="lehenga">Lehenga</option>
+                                        <option value="western">Western</option>
+                                      </select>
+                                      
+        <p id="result"></p>
+    </div>
+        </select>
+        <p id="result"></p>
+    </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- header ends -->
+        <!-- two sided blog part starts -->
+        <div class="container-fluid ">
+            <div class="row ">
+                <!-- to get the space form left and right -->
+                <div class="col-xl-10  col-lg-10 col-md-12 col-11 mx-auto my-5">
+                    <div class="row gx-5 mx-sm-auto">
+                        <!-- left side of the blog  -->
+                        <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                            <div class="row gy-5">
+                                <div id="sareeContent"></div>
+                                <div class="col-12 card p-4 shadow blog_left__div">
+                                    <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 ">
+                                        <h1 class="text-uppercase">Sarees </h1>
+                                        <p class="blog_title"> <span class="font-weight-bold">Hand Woven Sarees </span> 2023 </p>
+                                    </div>
+                                    <figure class="right_side_img mb-5">
+                                        <img src="https://th.bing.com/th/id/OIP.JQ216PQ5rmhfr5TQEXZuIwAAAA?pid=ImgDet&w=194&h=272&c=7&dpr=1.5" class="img-fluid shadow">
+                                        <img src="https://th.bing.com/th/id/OIP.KIIyq6cZ48hgTrTvXPPafAAAAA?pid=ImgDet&w=194&h=269&c=7&dpr=1.5"
+                                    </figure>
+                                    <p>
+                                        Woven sarees are eternally attractive, and it can be styled in multiple ways.  Handwoven sarees are known for their craftsmanship, quality, and unique designs, and they often have cultural and regional significance.
+
+                                        There are various types of handwoven sarees from different regions of India and around the world, each with its own distinct style and weaving tradition. Choose a contrasting blouse, statement jewelry pieces and try different draping styles. Art silk woven sarees with threadwork borders are popular for their texture and design.
+                                    </p>
+                                    <div class="d-flex justify-content-between left_div_btns">
+                                        <div>
+                                            <button class="left_div__like" id="like_btn"><i class="fa fa-thumbs-up"></i>Like</button>
+                                        </div>
+                                        <div>
+                                            <button class="left_div__reply" onclick="reply('reply1')">Replies <badge class="bg-white text-dark p-2">1</badge></button>
+                                        </div>
+                                    </div>
+                                    <div class="replies" id="reply1">
+                                        <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3 ">
+                                            <div class=" reply_img mx-2 align-self-center ">
+                                                <img src="https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png" />
+                                            </div>
+                                            <div class="reply_text__left">
+                                                <p class="blog_title "> <span class="font-weight-bold"> ankitha, </span> Aug 27, 2023, 7:20 PM </p>
+                                                <p>nice saree</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                              </div>
+                                <!-- 2nd topic  -->
+                                <div id="lehangaContent"></div>
+                                <div class="col-12 card p-4 shadow blog_left__div">
+                                    <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 ">
+                                        <h1 class="text-uppercase">lehanga</h1>
+                                        <p class="blog_title"> <span class="font-weight-bold"> Women's Sequins Thread Embroidered Georgette Lehenga Choli </span></p>
+                                    </div>
+                                    <figure class="right_side_img mb-5">
+                                        <img src="https://th.bing.com/th/id/OIP.3H_5Kn4R3t6KhJIdblPFNQHaJy?w=194&h=257&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                                        <img src="https://th.bing.com/th/id/OIP.KopZnkzrWlILhxpheOsJgQHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                                    </figure>
+                                    <p>
+                                        Women's Sequins Thread Embroidered Georgette Lehenga Choli. Sequins Thread Embroidered: The lehenga choli features sequin work and thread embroidery, suggesting it's embellished and likely has intricate detailing.Georgette Fabric: Georgette is a lightweight, flowing fabric commonly used in Indian ethnic wear. It's known for its softness and drape.The lehenga is a long, flared skirt that usually reaches the ankles. It's typically heavily embellished with embroidery, sequins, beads, or other decorative elements. Lehengas come in various styles, including A-line, fishtail, and flared, and they are known for their intricate designs and vibrant colors.
+                                     </p>
+                                    <div class="d-flex justify-content-between left_div_btns">
+                                        <div>
+                                            <button class="left_div__like" id="like_btn"><i class="fa fa-thumbs-up"></i>Like</button>
+                                        </div>
+                                        <div>
+                                            <button class="left_div__reply" onclick="reply('reply2')">Replies <badge class="bg-white text-dark p-2">2</badge></button>
+                                        </div>
+                                    </div>
+                                    <div class="replies" id="reply2">
+                                        <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3 ">
+                                            <div class=" reply_img mx-2 align-self-center ">
+                                                <img src="https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png" />
+                                            </div>
+                                            <div class="reply_text__left">
+                                                <p class="blog_title "> <span class="font-weight-bold"> sony </span> sep 18, 2023, 7:20 PM </p>
+                                                <p>beautiful lehanga</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3 ">
+                                            <div class=" reply_img mx-2 align-self-center ">
+                                                <img src="https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png" />
+                                            </div>
+                                            <div class="reply_text__left">
+                                                <p class="blog_title "> <span class="font-weight-bold"> anjali </span> sep 17, 2023, 7:20 PM </p>
+                                                <p>i loved this dress</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3rd topic -->
+                                <div class="col-12 card p-4 shadow blog_left__div">
+                                    <div id="westernContent"></div>
+                                    <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 ">
+                                        <h1 class="text-uppercase">Western</h1>
+                                        <p class="blog_title"> <span class="font-weight-bold">Fringe Dresses:</span> 2023 </p>
+                                    </div>
+                                    <figure class="right_side_img mb-5">
+                                        <img src="https://th.bing.com/th/id/OIP.4Qq_FgMyIpxAFOnpQga7qAHaLG?w=194&h=291&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                                        <img src="https://th.bing.com/th/id/OIP.HjYVhiGQKD6Vs4PvchYxwgHaLH?w=194&h=291&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                                    </figure>
+                                    <p><span class="font-weight-bold">Fringe is a fun and flirty detail that can add some edge to any outfit.</span> This trend is perfect for the summer months and can be worn on everything from skirts and dresses to tops and jackets.
+                                    </p>
+                                    <p>
+                                        <span class="font-weight-bold">Fringe maxi dresses:</span>These dresses are perfect for a boho chic look. They are made of flowy fabrics and have long fringe hems.<br>
+                                        <span class="font-weight-bold">Fringe mini dresses:</span>These dresses are perfect for a night out. They are made of lightweight fabrics and have flirty fringe hems<br>
+                                        <span class="font-weight-bold">Fringe bodycon dresses:</span>These dresses are perfect for a more formal occasion. They are made of body-con fabrics and have short fringe hems.
+                                    <div class="d-flex justify-content-between left_div_btns">
+                                        <div>
+                                            <button class="left_div__like" id="like_btn"><i class="fa fa-thumbs-up"></i>Like</button>
+                                        </div>
+                                        <div>
+                                            <button class="left_div__reply" onclick="reply('reply3')">Replies <badge class="bg-white text-dark p-2">1</badge></button>
+                                        </div>
+                                    </div>
+                                    <div class="replies" id="reply3">
+                                        <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3 ">
+                                            <div class="reply_text__left">
+                                                <p class="blog_title "> <span class="font-weight-bold"> raveena </span> sep 18, 2023, 7:20 PM </p>
+                                                <p>Beautiful dress amd content.</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3 ">
+                                            <div class=" reply_img mx-2 align-self-center ">
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  *******************************************************
+            **********************************************************.
+            right side of the div
+            *******************************************************
+            **********************************************************
+            -->
+            <div class="col-lg-3 col-md-11 col-20 justify-content-end m-lg-0 m-auto ">
+                <div class="row gy-5 left_div__blog">
+                    <!-- about me -->
+                    <div class="col-12  about_me_div shadow">
+                                    <p>shushumna</p>
+                                    <p>
+                                        
+                                        Hi there! Welcome to my fashion blog. I'm so glad you're here.I'm passionate about all things fashion, and I love sharing my knowledge and inspiration with others. I hope you'll find my blog to be a helpful and informative resource for all your fashion needs.
+                                        </p>
+                                </div>
+                                <!-- advertise -->
+                                <div class=" left_div_post">
+                                    <div class="right_div__title py-4 pl-2 ">
+                                        <h2>Advertise</h2>
+                                    </div>
+                                    <div class="right_sub__div ">
+                                        <div class="adevetise_img bg-light shadow">
+                                            <p>Ads goes here</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Inspiration -->
+                                <div class=" right_div_post">
+                                    <div class="right_div__title py-4 pl-2 ">
+                                        <h2>outfit</h2>
+                                    </div>
+                                    <div class="right_sub__div">
+                                        <div class="row gx-3">
+                                            <div class="col-11">
+                                                <figure>
+                                                    <img src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid shadow">
+                                                </figure>
+                                            </div>
+                                            <div class="col-11">
+                                                <figure>
+                                                    <img src="https://images.pexels.com/photos/2121559/pexels-photo-2121559.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid shadow">
+                                                </figure>
+                                            </div>
+                                            <div class="col-11">
+                                                <figure>
+                                                    <img src="https://images.pexels.com/photos/3014853/pexels-photo-3014853.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid shadow">
+                                                </figure>
+                                            </div>
+                                            <div class="col-11">
+                                                <figure>
+                                                    <img src="https://images.pexels.com/photos/5861341/pexels-photo-5861341.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid shadow">
+                                                </figure>
+                                            </div>
+                                            <div class="col-11">
+                                                <figure>
+                                                    <img src="https://images.pexels.com/photos/17500761/pexels-photo-17500761/free-photo-of-young-woman-in-red-beret-and-sunglasses-buttoning-her-black-pea-coat.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid shadow">
+                                                </figure>
+                                               </div>
+                                               <div class=" right_div_post">
+                                                <div class="right_div__title py-4 pl-2 ">
+                                                    <h2>Tags</h2>
+                                                </div>
+                                                <div class="tags_main right_sub__div">
+                                                    <a href="https://youtu.be/5p8e2ZkbOFU" target="_thapa" class="badge shadow text-capitalize"> HTML </a>
+                                                    <a href="#" class="badge shadow text-capitalize"> CSS </a><centre>
+                                                    <a href="#" class="badge shadow text-capitalize"> JavaScript </a></centre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Follow Me -->
+                                <div class=" right_div_post">
+                                    <div class="right_div__title py-4 pl-2 ">
+                                        <h2>Follow Me</h2>
+                                    </div>
+                                    <div class="right_sub__div d-flex justify-content-around">
+                                        <a href="#"> <i class="fab fa-facebook-square fa-3x"></i></a>
+                                        <a href="#"> <i class="fab fa-3x fa-github-square"></i> </a>
+                                        <a href="#"> <i class="fab fa-3x fa-twitter-square"></i></a>
+                                        <a href="#"> <i class="fab fa-3x fa-youtube-square"></i> </a>
+                                        <a href="#"> <i class="fab fa-3x fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <!-- Subscribe -->
+                                <div class=" right_div_post">
+                                    <div class="right_div__title py-4 pl-2 ">
+                                        <h2>Subscribe</h2>
+                                    </div>
+                                    <div class="right_sub__div">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Enter your e-mail below and get notified on the latest blog posts.</label>
+                                                <input type="email" class="form-control mt-2" id="exampleFormControlInput1" placeholder="name@example.com">
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="subs_btn d-block" type="submit">Subscribe</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="text-center py-5 bg-light">with love By @Fashionista</p>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- Popper.js first, then Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+  // Get references to the select element and the blog content sections
+  const selectElement = document.getElementById("attireSelect");
+  const blogSections = {
+    saree: document.getElementById("sareeContent"),
+    lehenga: document.getElementById("lehengaContent"),
+    western: document.getElementById("westernContent"),
+  };
+
+  // Function to handle dropdown change
+  function handleDropdownChange() {
+    const selectedValue = selectElement.value;
+
+    // Highlight the selected text
+    const selectedText = selectElement.options[selectElement.selectedIndex].text;
+    selectElement.style.backgroundColor = "lightyellow";
+
+    // Scroll to and focus on the selected blog section
+    blogSections[selectedValue].scrollIntoView({ behavior: "smooth" });
+    blogSections[selectedValue].focus();
+  }
+
+  // Add an event listener to detect changes in the select element
+  selectElement.addEventListener("change", handleDropdownChange);
+  </script>
+  <script>
+
+        const like = document.getElementById('like_btn');
+        const singleClick = () => {
+            like.style.fontWeight = 'bold';
+            like.style.background = '#bbe1fa';
+            like.style.color = '#1b262c';
+            like.innerHTML = "✓ Liked";
+        }
+        const doubleClick = () => {
+            like.style.fontWeight = 'normal';
+            like.style.background = '#3282b8';
+            like.style.color = '#fff';
+            like.innerHTML = "Like";
+        }
+        var clickCount = 0;
+        like.addEventListener('click', function() {
+            clickCount++;
+            if (clickCount === 1) {
+                singleClickTimer = setTimeout(function() {
+                    clickCount = 0;
+                    singleClick();
+                }, 400);
+            } else if (clickCount === 2) {
+                clearTimeout(singleClickTimer);
+                clickCount = 0;
+                doubleClick();
+            }
+        }, false);
+        // show and hide the replies
+        const reply = (rep) => {
+            console.log('hi');
+            // debugger;
+            var res = document.getElementById(rep);
+            console.log(res);
+            if (res.className == "replies") {
+                res.className = "sony_show";
+                res.style.WebkitTransition = 'all 0.3s ease';
+                // res.style.transition = 'all 0.3s ease';
+                // console.log(sony_show);
+            } else if (res.className == 'sony_show') {
+                // res.className = " ";
+                console.log('sony show');
+                res.className = "replies";
+            }
+        }
+        </script>
+        
+    </body>
+</html>
+
