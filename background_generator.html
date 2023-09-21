@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.4s;
+        }
+
+        #color-code {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        #customize {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .gradient-btn {
+            background: linear-gradient(to right, #070707, #000000);
+            border:none;
+            color: #fff;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body
+    <div>
+        <h1>Background Color Generator</h1>
+        <div id="color-code">#FFFFFF</div>
+        <button id="basic-btn" onclick="generateBasicColor()">Generate Basic Color</button>
+        <button class="gradient-btn" id="gradient-btn" onclick="generateGradientColor()">Generate Gradient Color</button>
+        <div id="customize">
+            <label for="color-input">Customize Color:</label>
+            <input type="color" id="color-input" onchange="changeColor(this.value)">
+            <button onclick="copyColorCode()">Copy Color Code</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to generate a random color
+        function generateRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Function to generate a basic color
+        function generateBasicColor() {
+            const randomColor = generateRandomColor();
+            document.body.style.background = randomColor;
+            document.getElementById('color-code').textContent = randomColor;
+        }
+
+        // Function to generate a gradient color
+        function generateGradientColor() {
+            const startColor = generateRandomColor();
+            const endColor = generateRandomColor();
+            const gradient = `linear-gradient(to right, ${startColor}, ${endColor})`;
+            document.body.style.background = gradient;
+            document.getElementById('color-code').textContent = gradient;
+        }
+
+        // Function to change the background color based on user input
+        function changeColor(color) {
+            document.body.style.background = color;
+            document.getElementById('color-code').textContent = color;
+        }
+         // Function to copy the color code to the clipboard
+         function copyColorCode() {
+            const colorCode = document.getElementById('color-code').textContent;
+            const textarea = document.createElement('textarea');
+            textarea.value = colorCode;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('Color code copied to clipboard: ' + colorCode);
+        }
+
+        // Initialize with a random color
+        generateBasicColor();
+    </script>
+</body>
+</html>
